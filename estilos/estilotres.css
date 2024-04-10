@@ -15,9 +15,9 @@
 }
 .telefono-padre img{
    position: relative;
-    width: 100px;
-    height: 100px;
-    top: 0;
+    width: 90px;
+    height: 80px;
+    top: 20px;
     left: auto;
 }
 .telefono-padre h1{
@@ -259,7 +259,7 @@ background: linear-gradient(0deg, rgba(77,34,195,1) 0%, rgba(250,45,253,1) 100%)
     border-radius: 50%;
     z-index: 10;
     background: #8f00ff;
-    right: 20px;
+    right: 50px;
     top: 80%;
 }
 .chat-container img{
