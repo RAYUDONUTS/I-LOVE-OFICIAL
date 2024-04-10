@@ -1,0 +1,413 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: white;
+}
+.chat-container{
+    display: flex;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 10;
+    background: #8f00ff;
+    right: 50px;
+    top: 80%;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+
+}
+.chat-container:hover{
+   background-color: #3b00ff;
+}
+.chat-container img{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    
+}
+
+.chat-container button{
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: -25px;
+    left: 70px;
+    z-index: 11;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.chat-container button:hover{
+    background: yellow;
+}
+#cerrar{
+    display: none;
+    
+}
+.telefono-padre{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: transparent;
+    top: 200px;
+    left: 0;
+}
+.telefono-padre img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 20%;
+    top: 200px;
+}
+.telefono-padre h1{
+    position: absolute;
+    left: 10%;
+    top: 120px;
+}
+#numeroo{
+    position: absolute;
+    top: 300px;
+    left: 15%;
+}
+#menu{
+    display: none;
+    
+}
+.logo-android{
+    display: none;
+}
+.logo{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 10px;
+    top: -65px;
+    object-fit: cover;
+    filter: drop-shadow(0 0 20px #a400ff);
+}
+
+#home{
+    position: fixed;
+    text-align: center;
+    background: rgb(77,34,195);
+background: linear-gradient(0deg, rgba(77,34,195,1) 0%, rgba(250,45,253,1) 100%);
+   width: 100%;
+   height: 80px;
+    z-index: 10;
+    top: -2px;
+}
+
+.barra-navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.barra-navegacion ul li {
+    position: relative;
+    top: 10px;
+    margin-left: 20px;
+    left: 50% ;
+}
+
+.barra-navegacion ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    margin: 0;
+    top: 10px;
+    color: black;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+}
+.barra-navegacion ul li a:hover{
+    background: black;
+    color: white;
+}
+
+
+
+/* Estilos específicos para cada sección */
+#inicio {
+    background-color: white;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 900px;
+    position: relative;
+    top: 71px;
+}
+.texto-love{
+    position: absolute;
+    top: 0;
+    color: black;
+    z-index: 1;
+    font-size: 4em;
+    left: 10px;
+    
+}
+.text-sabor{
+    position: absolute;
+    top: 100px;
+    font-size: 2em;
+    color: #b900ff;
+    left: 30px;
+}
+
+.parrafo{
+    position: absolute;
+    left: 30px;
+    top: 17%;
+    text-align: left;
+    white-space: pre-line;
+    font-weight: bold;
+}
+.fondo-uno{
+    position: absolute;
+    width: 50%;
+    height: 900px;
+    background: rgb(77,34,195);
+background: linear-gradient(0deg, rgba(77,34,195,1) 0%, rgba(250,45,253,1) 100%);
+    right: 0;
+    border-radius: 50% 0 0 0;
+    filter: drop-shadow(-10px 0 20px #000000);
+    top: -2px;
+    
+}
+
+#fondo{
+    position: absolute;
+    width: 700px;
+    right: 10px;
+    top: 0;
+    filter: drop-shadow(0 20px 30px #000000);    
+    transform: rotateY(0deg);
+    transition: transform 1s; 
+   animation: girar 2s infinite; 
+ 
+}
+@keyframes girar {
+  0% {
+    transform: rotateY(0deg); 
+  }
+  80% {
+    transform: rotateY(200deg); 
+  }
+  90%{
+    transform: rotateY(100deg);  
+  }
+  100% {
+    transform: rotateY(0deg); 
+  }
+}
+
+.contacto-redes {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    background: transparent;
+    display: flex;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    
+}
+.contacto-redes span {
+    position: absolute;
+    top: -30px;  
+    transform: translateX(-50%); 
+    left: 55%;        
+    opacity: 0; 
+    background: transparent;
+    color: #a400ff;
+    padding: 5px 10px;    
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.contacto-redes img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    top: 5px;
+    left: -25px;
+}
+.contacto-redes div{
+    position: relative; 
+    height: 60px;
+    width: 60px;
+    background: #8f00ff;
+    z-index: 5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contacto-redes div:hover{
+    background: white;
+    filter: drop-shadow(0 0 10px #8f00ff);
+}
+.instagram{
+   top: 40px;
+   left: 50%;
+  
+}
+.whatsapp{
+    
+    top: 150px;
+    left: 40%;
+}
+.facebook{
+    
+    top: 45%;
+    left: 31%;
+}
+.gmail{
+    
+    top: 65%;
+    left: 25%;
+}
+
+.contacto-redes a {
+    position: absolute; 
+    text-decoration: none;
+    outline: none;
+}
+
+.contacto-redes img:hover{
+   background: #202020;
+   padding-left: 10px;
+}
+.contacto-redes a:hover span {
+    opacity: 1; 
+}
+
+
+#slider-padre{
+    position: relative;
+    background: transparent;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    border: 3px solid #5000ff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#slider-padre img{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    left: 0;
+    top: 0;
+}
+
+.tienda-button{
+    position: absolute;
+    top: 57%;
+    left:  100px;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 20px #a400ff);
+    font-size: 2em;
+    color: white;
+    background: rgb(77,34,195);
+    background: linear-gradient(0deg, rgba(77,34,195,1) 0%, rgba(250,45,253,1) 100%);
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 4;
+}
+.tienda-button:hover{
+    background: #3b00ff;
+    filter: drop-shadow(0 0 20px black);
+    outline: none;
+    color: white;
+    
+    
+}
+
+.regresar{
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+  top: 50%;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  font-weight: bold;
+  background: #ce00ff;
+  border: 1px solid#2600ff;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+.siguiente{
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+  top: 50%;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  font-weight: bold;
+  background: #ce00ff;
+  border: 1px solid#2600ff;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+.regresar:hover{
+     background: #1100ff;
+    filter: drop-shadow(0 0 10px #b900ff);
+    outline: none;
+   
+}
+.siguiente:hover{
+     background: #1100ff;
+    filter: drop-shadow(0 0 10px #b900ff);
+    outline: none;
+   
+}
+
+@media screen and (min-width: 1025px) {
+    #cerrar{
+    display: none;
+}
+  #cerrar img{
+    display: none;
+  }
+#menu{
+    display: none;
+}
+#menu img{
+    display: none;
+}
+
+}

@@ -1,0 +1,298 @@
+@media screen and (max-width: 1024px) {
+    /* Estilos para pantallas de 1024px o menos */
+#inicio {
+    position: relative;
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+}
+
+.telefono-padre{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: transparent;
+    top: 200px;
+    overflow: hidden;
+}
+.telefono-padre img{
+   position: relative;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: auto;
+}
+.telefono-padre h1{
+    position: relative; 
+    left: 0;
+    top:0;
+}
+#numeroo{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.tienda-button{
+    top: 300px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    cursor: pointer;
+}
+.parrafo{
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: normal;
+    width: 400px;
+    height: 120px;
+    background: transparent;
+    
+}
+.texto-love {
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translate(-50%, -50%);
+}
+
+.text-sabor {
+    font-size: 1em;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+}
+
+.texto-love {
+    font-size: 2em;
+}
+
+
+ .logo-android {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: absolute;
+    width: 70%;
+    height: 100px;
+    top: 0;
+    left: 15%;
+    z-index: 1;
+   background: rgb(77,34,195);
+background: linear-gradient(0deg, rgba(77,34,195,1) 0%, rgba(250,45,253,1) 100%);
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+}
+
+.logo-android img {
+    max-width: 500px; 
+    max-height: 300px;
+    position: relative;
+    top: -20px;
+    left: -8px;
+    
+}
+
+  .contacto-redes{
+      display: flex;
+      left: 0;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      justify-content: center;
+      align-content: center;
+  }
+  .contacto-redes div{
+      display: flex;
+      left: 0;
+      top: 0;
+      position: relative;
+      top: 400px;
+      width: 50px;
+      height: 50px;
+      margin-left: 20px;
+  }
+  .contacto-redes img{
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      left: 5px;
+      top: 5px;
+  }
+  .fondo-uno{
+      display: none;
+  }
+  
+    #home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 100vh; 
+    background: rgb(77, 34, 195);
+    background: linear-gradient(0deg, rgba(77, 34, 195, 1) 0%, rgba(250, 45, 253, 1) 100%);
+    z-index: 10;
+    display: block;
+    flex-direction: column; 
+    align-items: center; 
+     display: none;
+}
+
+.barra-navegacion {
+    width: 100%;
+}
+
+.barra-navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: none;
+    
+}
+
+.barra-navegacion ul li {
+    height: 40px;
+    left: -15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+   
+   
+    
+}
+
+.barra-navegacion ul li a {
+    text-decoration: none;
+    position: relative;
+    color: black;
+    font-size: 15px; 
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+}
+
+.barra-navegacion ul li a:hover{
+    background: black;
+    color: white;
+}
+  
+  .logo{
+     display: none;
+ }
+    #menu{
+        display: flex;
+        position: fixed;
+        top: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        z-index: 10;
+        left: 0;
+        background: #a400ff;
+    }
+    #menu:hover{
+        background: #2600ff;
+    }
+    #menu img{
+        position:absolute;
+        width: 50px;
+        height: 50px;
+        top: -2px;
+        left: -2px;
+    }
+    #cerrar{    
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        top: 20px;
+        left: 120px;
+        border: none;
+        display: none;
+        background: #e300ff;
+        z-index: 2;
+    }
+    #cerrar:hover{
+        background: blue;
+        
+    }
+    #cerrar img{
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+    }
+  }
+@media screen and (max-width: 559px){
+    .texto-love{
+        font-size: 1em;
+    }
+    .text-sabor{
+        top: 80px;
+    }
+    .parrafo{
+        top: 190px;
+       font-size: 10px;
+        
+    }
+    .telefono-padre img{
+        width: 40px;
+        height: 40px;
+        top: 100px;
+    }
+    .telefono-padre h1{
+        font-size: 15px;
+    }
+    #numeroo{
+        font-size: 15px;
+        top: 100px;
+    }
+    .chat-container{
+    display: flex;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    z-index: 10;
+    background: #8f00ff;
+    right: 20px;
+    top: 80%;
+}
+.chat-container img{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+}
+.chat-container button{
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    top: -15px;
+    left: 60px;
+    z-index: 11;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.chat-container button:hover{
+    background: yellow;
+}
+
+}
+@media screen and (min-width: 1220px) {
+    .container-resumen img{
+     width: 100%;
+     height: 600px;
+    
+    }
+}
+   
