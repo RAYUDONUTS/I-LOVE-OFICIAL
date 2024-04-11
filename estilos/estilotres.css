@@ -23,7 +23,7 @@
 .telefono-padre h1{
     position: relative; 
     left: 0;
-    top: -25px;
+    top: -55px;
 }
 #numeroo{
     position: relative;
@@ -245,7 +245,7 @@ background: linear-gradient(0deg, rgba(77,34,195,1) 0%, rgba(250,45,253,1) 100%)
     }
     .telefono-padre h1{
         font-size: 15px;
-        top: -10px;
+        top: -55px;
     }
     #numeroo{
         font-size: 15px;
